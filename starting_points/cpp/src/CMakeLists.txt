@@ -1,5 +1,3 @@
-enable_testing()
-
 add_executable(
     game_of_life_test
     game_of_life_test.cpp
