@@ -6,5 +6,7 @@
         "starting_points"
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "cmake.sourceDirectory": "/workspaces/abb-mvd-code-retreat-25/starting_points/cpp",
+    "cmake.buildDirectory": "${workspaceFolder}/starting_points/cpp/build"
 }
