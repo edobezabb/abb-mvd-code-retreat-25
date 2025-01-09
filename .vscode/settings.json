@@ -14,5 +14,6 @@
         "ctest": {
             "statusBarVisibility": "visible",
         },
-    }
+    },
+    "cmake.ctest.allowParallelJobs": true
 }
