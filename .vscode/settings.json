@@ -8,5 +8,11 @@
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
     "cmake.sourceDirectory": "/workspaces/abb-mvd-code-retreat-25/starting_points/cpp",
-    "cmake.buildDirectory": "${workspaceFolder}/starting_points/cpp/build"
+    "cmake.buildDirectory": "${workspaceFolder}/starting_points/cpp/build",
+    "cmake.options.statusBarVisibility": "hidden",
+    "cmake.options.advanced": {
+        "ctest": {
+            "statusBarVisibility": "visible",
+        },
+    }
 }
