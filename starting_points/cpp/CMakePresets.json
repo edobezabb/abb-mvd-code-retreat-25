@@ -2,24 +2,54 @@
     "version": 3,
     "configurePresets": [
         {
-            "name": "GCC",
+            "name": "config-base",
+            "hidden": true,
             "displayName": "GCC 13.3.0 x86_64-linux-gnu",
             "description": "Using compilers: C = /usr/bin/gcc, CXX = /usr/bin/g++",
             "binaryDir": "${sourceDir}/out/build/${presetName}",
             "cacheVariables": {
                 "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
                 "CMAKE_C_COMPILER": "/usr/bin/gcc",
-                "CMAKE_CXX_COMPILER": "/usr/bin/g++",
+                "CMAKE_CXX_COMPILER": "/usr/bin/g++"
+            },
+            "generator": "Ninja"
+        },
+        {
+            "name": "debug",
+            "displayName": "Config Debug",
+            "description": "Sets debug build type",
+            "inherits": "config-base",
+            "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "release",
+            "displayName": "Config Release",
+            "description": "Sets release build type",
+            "inherits": "debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
             }
         }
     ],
     "buildPresets": [
         {
+            "name": "build-base",
+            "hidden": true,
+            "configurePreset": "debug"
+        },
+        {
             "name": "debug",
             "description": "",
             "displayName": "Build Debug",
-            "configurePreset": "GCC"
+            "inherits": "build-base"
+        },
+        {
+            "name": "release",
+            "displayName": "Build Release",
+            "inherits": "build-base",
+            "configurePreset": "release"
         }
     ]
 }
