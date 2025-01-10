@@ -4,6 +4,17 @@
 
 Tests defined in `src/game_of_life_test.cpp` can be run via terminal or through VSCode.
 
+## CMakeTools workflow
+
+This workflow can be executed from VSCode directly, without the use of the terminal.
+
+From CMake panel, select the Configure and Build preset - either Debug or Release.  
+This will trigger a CMake configuration step.  
+Then you can use the build button in the tab "Project Outline" below.
+
+Once this is configured, you can use the buttons on VSCode status bar to build, launch or debug.
+Alternatively, the VSCode Testing pane can be used to select which test to execute or debug.
+
 ## Terminal workflow
 
 This workflow uses CMake directly.
@@ -33,20 +44,11 @@ cmake --build --preset debug
 Executing Google Test directly:
 ```bash
 cd starting_points/cpp
-./out/build/[debug|release]/src/game_of_life_test
+./out/build/debug/src/game_of_life_test
 ```
 
 Or, if you want to use CMake's CTest:
 ```bash
-cd starting_points/cpp/out/build/[debug|release]
+cd starting_points/cpp/out/build/debug
 ctest
 ```
-
-## CMakeTools workflow
-This workflow can be executed from VSCode directly, without the use of the terminal.
-
-From CMake panel, select the Configure and Build preset - either Debug or Release.  
-This will trigger a CMake configuration step.  
-Then you can use the build button in the tab "Project Outline" below.
-
-Once this is configured, you can use the buttons on VSCode status bar to build, launch, debug and run "ctest".

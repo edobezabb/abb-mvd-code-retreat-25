@@ -2,12 +2,21 @@
 
 ## Initialization
 
-1. From terminal, enter this folder
-2. `uv sync`
+```bash
+cd starting_points/python
+uv sync
+```
+
+This will create the .venv (if not present) and synchronize the
+packages.
 
 ## Running tests
 
 Tests defined in `game_of_life_test.py` can be run via terminal or through VSCode.
+
+### VSCode
+
+Use the "Testing" pane. There you will find all the tests.
 
 ### Terminal
 
@@ -16,6 +25,3 @@ cd starting_points/python
 uv run pytest
 ```
 
-### VSCode
-
-Use the "Testing" pane. There you will find all the tests.

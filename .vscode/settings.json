@@ -10,5 +10,6 @@
     "python.testing.pytestEnabled": true,
     "cmake.sourceDirectory": "/workspaces/abb-mvd-code-retreat-25/starting_points/cpp",
     "cmake.buildDirectory": "${workspaceFolder}/starting_points/cpp/build",
-    "cmake.ctest.allowParallelJobs": true
+    "cmake.ctest.allowParallelJobs": true,
+    "workbench.editor.revealIfOpen": true
 }
