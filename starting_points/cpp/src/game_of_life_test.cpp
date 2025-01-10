@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include <fmt/format.h>
 
 #include "game_of_life.h"
 
@@ -14,4 +15,10 @@ TEST(HelloTest, BasicAssertions)
 TEST(HelloTest, AddingIntegers)
 {
     ASSERT_EQ(add(1, 2), 3);
+}
+
+TEST(HelloTest, FormattingString)
+{
+    auto formatted_str = fmt::format("Hello {}", "world");
+    EXPECT_EQ("Hello world", formatted_str);
 }

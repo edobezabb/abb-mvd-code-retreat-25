@@ -6,6 +6,7 @@ add_executable(
 target_link_libraries(
     game_of_life_test
     GTest::gtest_main
+    fmt::fmt
 )
 
 if(ENABLE_COVERAGE)
