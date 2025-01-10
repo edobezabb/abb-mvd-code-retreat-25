@@ -8,7 +8,8 @@ target_link_libraries(
     GTest::gtest_main
 )
 
-if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+if(ENABLE_COVERAGE)
+    message(STATUS "Coverage enabled")
     target_compile_options(game_of_life_test PRIVATE -coverage)
     target_link_options(game_of_life_test PRIVATE -coverage)
 endif()

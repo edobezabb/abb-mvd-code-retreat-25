@@ -24,6 +24,15 @@
             }
         },
         {
+            "name": "debug-coverage",
+            "displayName": "Config Debug with Coverage",
+            "description": "Sets debug-coverage build type",
+            "inherits": "debug",
+            "cacheVariables": {
+                "ENABLE_COVERAGE": "ON"
+            }
+        },
+        {
             "name": "release",
             "displayName": "Config Release",
             "description": "Sets release build type",
@@ -44,6 +53,12 @@
             "description": "",
             "displayName": "Build Debug",
             "inherits": "build-base"
+        },
+        {
+            "name": "debug-coverage",
+            "description": "",
+            "displayName": "Build Debug with Coverage",
+            "configurePreset": "debug-coverage"
         },
         {
             "name": "release",
