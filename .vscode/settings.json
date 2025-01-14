@@ -2,7 +2,7 @@
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
-    "python.defaultInterpreterPath": "starting_points/python/.venv/bin/python",
+    "python.defaultInterpreterPath": "starting_points/python/.venv/bin/python3",
     "python.testing.pytestArgs": [
         "starting_points"
     ],
