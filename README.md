@@ -15,6 +15,11 @@ It is also possible to deploy the devcontainer locally, if you know what you are
 
 ### Codespaces
 
+Make sure you are logged in into GitHub. It's not strictly necessary to use the work account,
+as we are not going to use GitHub Copilot.
+The only requirement is that you still have some Codespaces hours to use, which isn't a problem
+if you've never used them before - you get 120hrs per month for free.
+
 In order to create a codespace for this repo, click on Code -> Codespaces -> + symbol,
 as shown below:
 ![alt text](image.png)
