@@ -22,3 +22,10 @@ TEST(HelloTest, FormattingString)
     auto formatted_str = fmt::format("Hello {}", "world");
     EXPECT_EQ("Hello world", formatted_str);
 }
+
+TEST(HelloTest, StructComparison)
+{
+    Point p1{10, 20};
+    Point p2{10, 20};
+    EXPECT_EQ(p1, p2);
+}
